@@ -1,6 +1,10 @@
 {
     "version": 2,
     "name": "shenma",
+    "builds": [
+        { "src": "*", "use": "@now/static" }
+
+    ],
     "routes": [
         {
           "src": "/.well-known/(.*)",
