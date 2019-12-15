@@ -1,5 +1,11 @@
 {
-    "builds": [
-      { "src": "/.well-known", "use": "@now/static" }
+    "version": 2,
+    "name": "shenma",
+    "routes": [
+        {
+          "src": "/.well-known/(.*)",
+          "headers": { "cache-control": "s-maxage=31536000,immutable" },
+          "dest": "/.well-known/$1"
+        }
     ]
   }
