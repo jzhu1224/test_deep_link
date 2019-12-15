@@ -1,5 +1,5 @@
 {
     "builds": [
-      { "src": "*.well-known", "use": "@now/static" }
+      { "src": "/.well-known", "use": "@now/static" }
     ]
   }
