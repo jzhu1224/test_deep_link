@@ -2,8 +2,7 @@
     "version": 2,
     "name": "shenma",
     "builds": [
-        { "src": "*", "use": "@now/static" }
-
+        { "src": ".well-known", "use": "@now/static" }
     ],
     "routes": [
         {
